@@ -33,23 +33,23 @@
             <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
                 <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 rounded-t-[0.5rem]"
+                        <a href="#profile"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent rounded-t-[0.5rem]"
                             aria-current="page">Profil</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100"
+                        <a href="#product"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent"
                             aria-current="page">Produk</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100"
+                        <a href="#testimoni"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent"
                             aria-current="page">Testimoni</a>
                     </li>
                     <li>
-                        <a href="#"
-                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 rounded-b-[0.5rem]"
+                        <a href="#loker"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent rounded-b-[0.5rem]"
                             aria-current="page">Lowongan</a>
                     </li>
                 </ul>
@@ -60,26 +60,24 @@
     <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
         <div class='container px-4 mx-auto text-center lg:text-left'>
             <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
-                Dipercaya Sejak Tahun 1984 <br />
-                Heksa Propolis Langkah <br />
-                Awal Anda Awet Sehat.
+                Kami telah Memiliki 26 <br> Cabang di Seluruh Indonesia
             </h2>
             <p class="mt-8 text-base lg:text-lg text-white">
-                In publishing and graphic design, Lorem ipsum is a <br />
-                placeholder text commonly used to demonstrate
+                Mulai dari Jawa Timur, Jawa Barat, Jawa Tengah, <br /> Sumatera, Kalimantan, bahkan hingga Sulawesi.
             </p>
-            <div class="mt-11 mx-auto lg:mx-0">
+            <div
+                class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
                 <button
                     class="rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
                     <span class="text-base lg:text-lg">Lihat Produk</span></button>
-                <button
-                    class="rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] ml-[1.875rem] hover:bg-white hover:text-slate-500">
-                    <span class="text-base lg:text-lg">Whatsapp Kami</span></button>
+                <a href="http://wa.me/62980534503" target="_blank"
+                    class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                    <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
             </div>
         </div>
     </header>
     <!-- Perusahaan -->
-    <section class="pb-[5.625rem] pt-[11.25rem]">
+    <section id="profile" class="pb-[5.625rem] pt-[11.25rem]">
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap items-center">
                 <div class="w-full lg:w-6/12">
@@ -168,7 +166,7 @@
         </div>
     </section>
     <!-- Produk 1 : Bio Mhor Heksa -->
-    <section class="py-[5.625rem] bg-secondary">
+    <section id="product" class="py-[5.625rem] bg-secondary">
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-full lg:w-6/12">
@@ -381,7 +379,7 @@
         </div>
     </section>
     <!-- Testimoni -->
-    <section class="py-[5.625rem]">
+    <section id="testimoni" class="py-[5.625rem]">
         <div class="container px-4 mx-auto">
             <div class="w-fit mx-auto text-center">
                 <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Tentang Kami</h6>
@@ -438,7 +436,7 @@
         </div>
     </section>
     <!-- Lowongan Kerja -->
-    <section class="bg-secondary">
+    <section id="loker" class="bg-secondary">
         <div class="container px-4 mx-auto">
             <div class="flex flex-wrap">
                 <div class="w-full lg:w-6/12 py-[5.625rem]">
@@ -675,7 +673,7 @@
 
             $(window).on('scroll', function () {
                 "use strict"
-                if ($(window).scrollTop() >= 280) {
+                if ($(window).scrollTop() >= 150) {
                     nav.addClass("bg-white")
                     href.addClass('href-scrolled')
                     container.addClass('py-6')
@@ -684,6 +682,18 @@
                     href.removeClass('href-scrolled')
                     container.removeClass('py-6')
                 }
+            });
+
+
+            $(href).on('click', function (e) {
+                e.preventDefault();
+                var target = this.hash;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
             });
         })
     </script>
