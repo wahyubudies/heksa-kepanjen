@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .href-scrolled {
+        @apply text-slate-500 !important
+    }
+}
