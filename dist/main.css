@@ -575,8 +575,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 2.75rem;
 }
 
-.ml-\[1\.875rem\] {
-  margin-left: 1.875rem;
+.mt-\[1\.575rem\] {
+  margin-top: 1.575rem;
 }
 
 .mt-5 {
@@ -627,18 +627,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-top: 4.375rem;
 }
 
-.mt-\[1\.875rem\] {
-  margin-top: 1.875rem;
-}
-
-.mt-0 {
-  margin-top: 0px;
-}
-
-.mt-\[1\.575rem\] {
-  margin-top: 1.575rem;
-}
-
 .block {
   display: block;
 }
@@ -683,14 +671,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   width: 1.5rem;
 }
 
-.w-\[11\.375rem\] {
-  width: 11.375rem;
-}
-
 .w-fit {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+}
+
+.w-\[11\.375rem\] {
+  width: 11.375rem;
 }
 
 .w-32 {
@@ -755,14 +743,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-full {
   border-radius: 9999px;
-}
-
-.rounded-\[1\.583rem\] {
-  border-radius: 1.583rem;
-}
-
-.rounded-\[1\.600rem\] {
-  border-radius: 1.600rem;
 }
 
 .rounded-t-\[0\.5rem\] {
@@ -1106,12 +1086,12 @@ Ensure the default browser behavior of the `hidden` attribute.
     margin-right: 0px;
   }
 
-  .lg\:mt-0 {
-    margin-top: 0px;
-  }
-
   .lg\:ml-\[1\.875rem\] {
     margin-left: 1.875rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {

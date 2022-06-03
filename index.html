@@ -67,9 +67,9 @@
             </p>
             <div
                 class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
-                <button
-                    class="rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
-                    <span class="text-base lg:text-lg">Lihat Produk</span></button>
+                <a href="#product" id="btn-product"
+                    class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                    <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
                 <a href="http://wa.me/62980534503" target="_blank"
                     class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
                     <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
@@ -600,23 +600,23 @@
                         Jl. Salak Panggungrejo, <br /> Kepanjen, Kab. Malang
                     </p>
                 </div>
-                <div class="w-full lg:w-2/12 mt-8 lg:mt-0">
+                <div class="w-full lg:w-2/12 mt-8 lg:mt-0" id="footer-menu">
                     <p class="text-base lg:text-lg text-white">
                         Menu
                     </p>
-                    <a href="#"
+                    <a href="#profile"
                         class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-5">
                         Profil
                     </a>
-                    <a href="#"
+                    <a href="#product"
                         class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
                         Produk
                     </a>
-                    <a href="#"
+                    <a href="#testimoni"
                         class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
                         Testimoni
                     </a>
-                    <a href="#"
+                    <a href="#loker"
                         class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
                         Lowingan
                     </a>
@@ -655,7 +655,8 @@
                     </a>
                 </div>
                 <div class="w-full pb-10 mt-[4.375rem] text-slate-400 text-sm lg:text-base">
-                    &copy; 2022 Alga Creative Developer
+                    &copy; 2022 <a href="https://algacreative.com/" class="hover:text-white" target="_blank"> Alga
+                        Creative </a> Developer
                 </div>
             </div>
         </div>
@@ -670,6 +671,19 @@
             var nav = $("#nav")
             var href = $('#mobile-menu a')
             var container = $('#nav .container')
+            var btn_product = $('#btn-product')
+            var footer_menu = $('#footer-menu a')
+
+            function clickScrolled(e) {
+                e.preventDefault();
+                var target = this.hash;
+                $target = $(target);
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target;
+                });
+            }
 
             $(window).on('scroll', function () {
                 "use strict"
@@ -684,17 +698,9 @@
                 }
             });
 
-
-            $(href).on('click', function (e) {
-                e.preventDefault();
-                var target = this.hash;
-                $target = $(target);
-                $('html, body').stop().animate({
-                    'scrollTop': $target.offset().top
-                }, 900, 'swing', function () {
-                    window.location.hash = target;
-                });
-            });
+            $(href).on('click', clickScrolled)
+            $(btn_product).on('click', clickScrolled)
+            $(footer_menu).on('click', clickScrolled)
         })
     </script>
 </body>
