@@ -8,15 +8,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
         integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet"
+    <!-- <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
         integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
 </head>
 
 <body>
     <!-- Navigation -->
-    <nav id="nav" class="bg-tranparent flex items-center top-0 left-0 w-full fixed transition-all">
+    <nav id="nav" class="bg-tranparent flex items-center top-0 left-0 w-full fixed transition-all z-10">
         <div
             class="container px-4 flex flex-wrap justify-between items-center mx-auto lg:border-b lg:border-gray-50 lg:border-opacity-50 py-10 transition-all">
             <a href="#" class="flex items-center">
@@ -64,25 +64,68 @@
         </div>
     </nav>
     <!-- Hero -->
-    <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
-        <div class='container px-4 mx-auto text-center lg:text-left'>
-            <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
-                Kami telah Memiliki 26 <br> Cabang di Seluruh Indonesia
-            </h2>
-            <p class="mt-8 text-base lg:text-lg text-white">
-                Mulai dari Jawa Timur, Jawa Barat, Jawa Tengah, <br /> Sumatera, Kalimantan, bahkan hingga Sulawesi.
-            </p>
-            <div
-                class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
-                <a href="#product" id="btn-product"
-                    class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
-                    <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
-                <a href="http://wa.me/62980534503" target="_blank"
-                    class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
-                    <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+    <div class="custom-carousel owl-carousel owl-theme">
+        <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Kami telah Memiliki 26 <br> Cabang di Seluruh Indonesia
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-white">
+                    Mulai dari Jawa Timur, Jawa Barat, Jawa Tengah, <br /> Sumatera, Kalimantan, bahkan hingga Sulawesi.
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
             </div>
-        </div>
-    </header>
+        </header>
+        <!-- foto produk -->
+        <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Terbukti Membantu Ribuan <br /> Orang Setiap Bulannya
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-white">
+                    Produk kami telah terjual ribuan pcs <br /> setiap bulannya untuk membantu masyarakat
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
+            </div>
+        </header>
+        <!-- foto korporat -->
+        <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Telah Dipercaya <br /> Sejak Tahun 2017
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-white">
+                    Sejak saat itu pula, heksa telah digunakan oleh banyak orang <br /> untuk mengatasi berbagai
+                    permasalahan Kesehatan mereka
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
+            </div>
+        </header>
+    </div>
     <!-- Perusahaan -->
     <section id="profile" class="pb-[5.625rem] pt-[11.25rem]">
         <div class="container px-4 mx-auto">
@@ -149,8 +192,7 @@
         <div class="container px-4 mx-auto">
             <div class="w-full text-center mx-auto">
                 <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Lokasi</h6>
-                <h2
-                    class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                <h2 class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
                     Kantor Kami
                 </h2>
 
@@ -716,7 +758,7 @@
 
             $(window).on('scroll', function () {
                 "use strict"
-                if ($(window).scrollTop() >= 150) {
+                if ($(window).scrollTop() >= 50) {
                     nav.addClass("bg-white")
                     href.addClass('href-scrolled')
                     container.addClass('py-6')
@@ -735,6 +777,16 @@
                         show_content.html('Tampilkan Lengkap')
                     }
                 })
+            })
+
+            $('.custom-carousel').owlCarousel({
+                animateOut: 'fadeOut',
+                loop: true,
+                nav: true,
+                dots: false,
+                items: 1,
+                margin: 0,
+                smartSpeed: 450
             })
         })
     </script>

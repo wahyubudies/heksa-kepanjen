@@ -7,3 +7,11 @@
         @apply text-slate-500 !important
     }
 }
+
+.owl-nav {
+    @apply absolute top-1/2 left-1/2 w-full flex justify-between -translate-x-1/2 -translate-y-1/2 px-4
+}
+
+.owl-nav button {
+    @apply bg-white rounded-full w-[40px] h-[40px] flex justify-center text-3xl text-slate-500 !important
+}
