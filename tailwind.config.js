@@ -11,7 +11,9 @@ module.exports = {
         secondary: '#F5F6FA'
       },
       backgroundImage: {
-        'hero-pattern': 'url("img/hero-pattern.jpg")'
+        'hero-pattern': 'url("img/hero-pattern.jpg")',
+        'hero-product': 'url("img/hero-product.png")',
+        'hero-corporate': 'url("img/hero-corporate.jpg")',
       }
     }
   },
