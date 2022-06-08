@@ -1,0 +1,795 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/main.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+        integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+        integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav id="nav" class="bg-tranparent flex items-center top-0 left-0 w-full fixed transition-all z-10">
+        <div
+            class="container px-4 flex flex-wrap justify-between items-center mx-auto lg:border-b lg:border-gray-50 lg:border-opacity-50 py-10 transition-all">
+            <a href="#" class="flex items-center">
+                <img src="./dist/img/logo.png" class="mr-3 h-9" alt="" />
+            </a>
+            <button data-collapse-toggle="mobile-menu" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:focus:ring-gray-600"
+                aria-controls="mobile-menu" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+                <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="mobile-menu">
+                <ul class="flex flex-col mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+                    <li>
+                        <a href="#profile"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent rounded-t-[0.5rem]"
+                            aria-current="page">Profil</a>
+                    </li>
+                    <li>
+                        <a href="#product"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent"
+                            aria-current="page">Produk</a>
+                    </li>
+                    <li>
+                        <a href="#testimoni"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent"
+                            aria-current="page">Testimoni</a>
+                    </li>
+                    <li>
+                        <a href="#loker"
+                            class="block py-2 pr-4 pl-5 text-slate-500 lg:text-white bg-white md:bg-transparent md:p-0 text-base font-light hover:bg-slate-100 lg:hover:bg-transparent rounded-b-[0.5rem]"
+                            aria-current="page">Lowongan</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Hero -->
+    <div class="custom-carousel owl-carousel owl-theme">
+        <header class='bg-hero-pattern bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Kami telah Memiliki 26 <br> Cabang di Seluruh Indonesia
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-white">
+                    Mulai dari Jawa Timur, Jawa Barat, Jawa Tengah, <br /> Sumatera, Kalimantan, bahkan hingga Sulawesi.
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
+            </div>
+        </header>
+        <!-- foto produk -->
+        <header class='bg-hero-product bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-primary text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Terbukti Membantu Ribuan <br /> Orang Setiap Bulannya
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-primary">
+                    Produk kami telah terjual ribuan pcs <br /> setiap bulannya untuk membantu masyarakat
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 border-primary text-primary p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-primary hover:text-white">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
+            </div>
+        </header>
+        <!-- foto korporat -->
+        <header class='bg-hero-corporate bg-cover bg-center pt-[11.688rem] pb-[9.813rem]'>
+            <div class='container lg:px-11 mx-auto text-center lg:text-left'>
+                <h2 class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Telah Dipercaya <br /> Sejak Tahun 2017
+                </h2>
+                <p class="mt-8 text-base lg:text-lg text-white">
+                    Sejak saat itu pula, heksa telah digunakan oleh banyak orang <br /> untuk mengatasi berbagai
+                    permasalahan Kesehatan mereka
+                </p>
+                <div
+                    class="mt-11 mx-auto lg:mx-0 flex justify-center lg:justify-start flex-col lg:flex-row items-center lg:items-start w-fit">
+                    <a href="#product" id="btn-product"
+                        class="block rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Lihat Produk</span></a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block rounded-[1.563rem] bg-transparent border-2 borrder-white text-white p-3 w-[11.375rem] lg:ml-[1.875rem] mt-[1.575rem] lg:mt-0 hover:bg-white hover:text-slate-500">
+                        <span class="text-base lg:text-lg block text-center">Whatsapp Kami</span></a>
+                </div>
+            </div>
+        </header>
+    </div>
+    <!-- Perusahaan -->
+    <section id="profile" class="pb-[5.625rem] pt-[11.25rem]">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap items-center">
+                <div class="w-full lg:w-6/12">
+                    <img src="./dist/img/perusahaan.png" alt="Perusahaan Heksa Propolis Kepanjen"
+                        class="rounded-[25px] mx-auto">
+                </div>
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto lg:mx-0 w-fit lg:w-[29.938rem]">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Perusahaan</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            PT. Heksa Artha Sakti
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Heksa Kepanjen adalah salah satu cabang perusahaan PT. Heksa Artha Sakti yang berpusat di
+                            Bandung, Jawa Barat. <br /><br />
+                            Saat ini heksa memiliki 26 kantor cabang yang tersebar di seluruh pulau di indonesia.
+                            Seperti di Jawa Timur, Jawa Barat,
+                            Jawa Tengah, Sumatera, Kalimantan, bahkan hingga Sulawesi. <br /><br />
+                            Kami berkomitmen ingin memperluas jaringan kami di seluruh bagian di indonesia. Dengan cara
+                            mendidik, membangun, dan
+                            membuka lapangan pekerjaan untuk menciptakan SDM yang handal, unggul dan berintergritas
+                            yang siap untuk ekspansi ke
+                            daerah-daerah yang kami tuju.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Visi Misi -->
+    <section class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto w-fit lg:w-[29.938rem]">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Tentang Kami</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl mt-[0.938rem] md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Visi
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Menjadi perusahaan pengembang bisnis terbesar di Indonesia dan Building Company
+                        </p>
+                        <h2
+                            class="font-semibold text-black text-3xl mt-4 md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Misi
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Menciptakan pemimpin dan entrepreneur sukses
+                        </p>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 -order-1 lg:order-1">
+                    <img src="./dist/img/visi-misi.png" alt="" class="mx-auto lg:mx-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lokasi Perusahaan -->
+    <section class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="w-full text-center mx-auto">
+                <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Lokasi</h6>
+                <h2 class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Kantor Kami
+                </h2>
+
+                <iframe class="w-full lg:w-[40.563rem] h-[19rem] mt-8 border-0 rounded-[1.563rem] mx-auto"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d246.8477491842951!2d112.5607813!3d-8.14579!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd26d7f445aa9e50!2sPT.%20Heksa%20Artha%20Sakti%20Kepanjen!5e0!3m2!1sen!2sid!4v1654170942409!5m2!1sen!2sid"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+                <p class="mt-[1.188rem] text-base lg:text-lg text-slate-500 ">Jl. Salak Panggungrejo, Kepanjen,
+                    Kabupaten Malang</p>
+                <a href="https://goo.gl/maps/T4B2nhdQ5R9kMZ7B6" target="_blank"
+                    class="block mt-[2.625rem] mx-auto rounded-[1.563rem] bg-primary text-white p-3 w-[11.375rem] hover:bg-slate-500 hover:text-white">
+                    <span class="text-base lg:text-lg">Lihat Lokasi</span></a>
+            </div>
+        </div>
+    </section>
+    <!-- Produk 1 : Bio Mhor Heksa -->
+    <section id="product" class="py-[5.625rem] bg-secondary">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto w-fit lg:w-[29.938rem] mt-8 lg:mt-0">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Produk Unggulan</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Bio Mhor Heksa
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Herbal yang telah lulus BPOM untuk <br> sistem pencernaan & kekebalan tubuh
+                        </p>
+                        <h4 class="font-medium text-black text-base lg:text-lg mt-[3.125rem]">
+                            Manfaat
+                        </h4>
+                        <ul class="mt-5">
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Sebagai anti-oksidan dan anti-peradangan
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Memperlancar sistem pencernaan tubuh
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Mencegah cacingan
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 -order-1 lg:order-1">
+                    <img src="./dist/img/product/product-1.png" alt="" class="mx-auto lg:mx-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Produk 2 : Heksa Propolis -->
+    <section class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <img src="./dist/img/product/product-2.png" alt="" class="mx-auto">
+                </div>
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto lg:mx-0 w-fit lg:w-[29.938rem] mt-8 lg:mt-0">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Produk Unggulan</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Heksa Propolis
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Solusi terbaik penyakit typhus dan lemah syahwat
+                        </p>
+                        <h4 class="font-medium text-black text-base lg:text-lg mt-[3.125rem]">
+                            Manfaat
+                        </h4>
+                        <ul class="mt-5">
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Meningkatkan daya tahan tubuh
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Meningkatkan vitalitas pria/wanita
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Mengobati typhus dan asma
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Product 3 : Gamat Heksa -->
+    <section class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto w-fit lg:w-[29.938rem] mt-8 lg:mt-0">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Produk Unggulan</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Gamat Heksa
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            100% terbuat dari ekstrak bahan alami yaitu gamat emas
+                        </p>
+                        <h4 class="font-medium text-black text-base lg:text-lg mt-[3.125rem]">
+                            Manfaat
+                        </h4>
+                        <ul class="mt-5">
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Membantu pengobatan asam urat
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Membantu mengurangi nyeri sendi dan pengeroposan tulang
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Mencegah sel kanker dan tumor
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="w-full lg:w-6/12 -order-1 lg:order-1">
+                    <img src="./dist/img/product/product-3.png" alt="" class="mx-auto lg:mx-0">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Produk 4 : Vittomax’s Heksa -->
+    <section class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <img src="./dist/img/product/product-4.png" alt="" class="mx-auto">
+                </div>
+                <div class="w-full lg:w-6/12">
+                    <div class="mx-auto lg:mx-0 w-fit lg:w-[29.938rem] mt-8 lg:mt-0">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Produk Unggulan</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Vittomax's Heksa
+                        </h2>
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Membantu penyembuhan penyakit stroke, asam urat dan penyempitan pembuluh darah
+                        </p>
+                        <h4 class="font-medium text-black text-base lg:text-lg mt-[3.125rem]">
+                            Manfaat
+                        </h4>
+                        <ul class="mt-5">
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Dengan ekstrak daun pegagan mampu memperlancar peredaran darah
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Menjaga dan membantu fungsi otak
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Baik untuk kesuburan
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Beli Online -->
+    <section class=" bg-[#38AA37]">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 pt-[5.625rem] hidden lg:block">
+                    <img src="./dist/img/woman-yellow.png" alt="" class="mx-auto">
+                </div>
+                <div class="w-full lg:w-6/12 py-[5.625rem]">
+                    <div class="mx-auto lg:mx-0 w-fit lg:w-[29.938rem]">
+                        <h6 class="text-lg lg:text-xl text-white font-medium ">Beli Online</h6>
+                        <h2
+                            class="font-semibold text-white text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Segera Dapatkan Produk Kami
+                        </h2>
+
+                        <div
+                            class="flex flex-wrap lg:flex-nowrap items-stretch justify-center lg:justify-start flex-column lg:flex-row">
+                            <div class="bg-white p-4 rounded-[0.3125rem] text-center mt-8 min-w-[9.375rem]">
+                                <img src="./dist/img/merchant/tokopedia.png" alt="">
+                                <p class="my-2 text-slate-500 text-sm lg:text-base">Tokopedia</p>
+                                <a href="https://www.tokopedia.com/heksakepanjen" target="_blank"
+                                    class="block mx-auto rounded-[0.3125rem] bg-primary text-white px-3 py-1 hover:bg-slate-500 hover:text-white">
+                                    <span class="text-sm lg:text-base">Lihat Produk</span></a>
+                            </div>
+                            <div class="bg-white p-4 rounded-[0.3125rem] text-center mt-8 mx-4 min-w-[9.375rem]">
+                                <img src="./dist/img/merchant/shopee.png" alt="">
+                                <p class="my-2 text-slate-500 text-sm lg:text-base">Shopee</p>
+                                <a href="https://shopee.co.id/shop/777865092/" target="_blank"
+                                    class="block mx-auto rounded-[0.3125rem] bg-primary text-white px-3 py-1 hover:bg-slate-500 hover:text-white">
+                                    <span class="text-sm lg:text-base">Lihat Produk</span></a>
+                            </div>
+                            <div class="bg-white p-4 rounded-[0.3125rem] text-center mt-8 min-w-[9.375rem]">
+                                <img src="./dist/img/merchant/whatsapp.png" alt="">
+                                <p class="my-2 text-slate-500 text-sm lg:text-base">Whatsapp</p>
+                                <a href="http://wa.me/62980534503" target="_blank"
+                                    class="block mx-auto rounded-[0.3125rem] bg-primary text-white px-3 py-1 hover:bg-slate-500 hover:text-white">
+                                    <span class="text-sm lg:text-base">Lihat Produk</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- Testimoni -->
+    <section id="testimoni" class="py-[5.625rem]">
+        <div class="container px-4 mx-auto">
+            <div class="w-fit mx-auto text-center">
+                <h6 class="text-lg lg:text-xl text-primary font-medium mt-8 lg:mt-0">Testimoni</h6>
+                <h2 class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                    Apa Kata Pengguna Heksa?
+                </h2>
+            </div>
+            <div class="flex flex-wrap w-full lg:w-[64rem] mt-14 mx-auto text-center">
+                <div class="w-full lg:w-4/12 px-4">
+                    <img src="./dist/img/testimoni/01_Pak Sapardi.jpg" alt=""
+                        class="rounded-full mx-auto w-32 h-32 object-cover">
+                    <p class="font-bold text-base lg:text-lg text-black w-full my-5 mx-auto lg:mx-0">
+                        Bapak Sapardi
+                    </p>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 w-full mt-6 mb-2 mx-auto lg:mx-0">
+                        Malang, 72 tahun
+                    </p>
+                    <p class="text-sm lg:text-base text-slate-500 w-full mx-auto lg:mx-0">
+                        "Sejak pakai heksa, jadi jarang sakit-sakitan dan nafsu makan jadi nambah"
+                    </p>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 mt-8 lg:mt-0">
+                    <img src="./dist/img/testimoni/02_Pak Yanto.jpg" alt=""
+                        class="rounded-full mx-auto w-32 h-32 object-cover">
+                    <p class="font-bold text-base lg:text-lg text-black w-full my-5 mx-auto lg:mx-0">
+                        Bapak dan Ibu Yanto
+                    </p>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 w-full mt-6 mb-2 mx-auto lg:mx-0">
+                        Bandung, 55 tahun
+                    </p>
+                    <p class="text-sm lg:text-base text-slate-500 w-full mx-auto lg:mx-0">
+                        "Dulu sering bermasalah sama perut. Tapi sejak minum bio mhor, makin hari makin lancar dan
+                        Alhamdulillah sehat sampai
+                        sekarang"
+                    </p>
+                </div>
+                <div class="w-full lg:w-4/12 px-4 mt-8 lg:mt-0">
+                    <img src="./dist/img/testimoni/03_Bu Khotimah.jpg" alt=""
+                        class="rounded-full mx-auto w-32 h-32 object-cover">
+                    <p class="font-bold text-base lg:text-lg text-black w-full my-5 mx-auto lg:mx-0">
+                        Ibu Khotimah
+                    </p>
+                    <p class="font-medium text-base lg:text-lg text-slate-500 w-full mt-6 mb-2 mx-auto lg:mx-0">
+                        Surabaya, 47 tahun
+                    </p>
+                    <p class="text-sm lg:text-base text-slate-500 w-full mx-auto lg:mx-0">
+                        "Awalnya nyeri sendi di kaki kiri. Lalu disuruh anak saya buat coba Gamat Heksa. Ternyata
+                        produknya bisa bantu detoks
+                        purin. Sekarang gapernah kumat lagi"
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Lowongan Kerja -->
+    <section id="loker" class="bg-secondary">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12 py-[5.625rem]">
+                    <div class="mx-auto w-fit lg:w-[29.938rem] mt-8 lg:mt-0">
+                        <h6 class="text-lg lg:text-xl text-primary font-medium ">Lowongan Kerja</h6>
+                        <h2
+                            class="font-semibold text-black text-3xl md:text-4xl lg:text-[2.375rem] lg:leading-[2.875rem]">
+                            Jadilah bagian dari kami!
+                        </h2>
+                        <p class="text-base lg:text-lg text-black w-full max-w-[31.25rem] mx-auto lg:mx-0">Marketing
+                            Training dan Marketing Executive</p>
+
+                        <!-- Kriteria -->
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Kriteria</p>
+                        <ul>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Pria atau wanita usia 17-27 tahun
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Pendidikan min SMA Sederajat
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Sehat jasmani dan rohani
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Mempunyai semangat yang tinggi
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Mampu bekerja dengan tim
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Pengalaman tidak diutamakan
+                                </p>
+                            </li>
+                            <li class="list-disc ml-8">
+                                <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                    Motivasi kerja tinggi
+                                </p>
+                            </li>
+                        </ul>
+
+                        <div id="content-loker" class="hidden">
+                            <!-- Persyaratan -->
+                            <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                                Persyaratan</p>
+                            <ul>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        FC KTP/KK 1 lembar
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Pas foto 4x6 2 lembar
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        FC surat vaksin
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        FC ijazah terakhir
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Surat lamaran kerja
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Daftar riwayat hidup
+                                    </p>
+                                </li>
+                            </ul>
+
+                            <!-- Benefit -->
+                            <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                                Benefit</p>
+                            <ul>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Gaji Pokok Rp. 1.500.000
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Bonus harian
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Insentif
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Jenjang karir jelas
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Reward bulanan
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Mess (bagi yang membutuhkan)
+                                    </p>
+                                </li>
+                                <li class="list-disc ml-8">
+                                    <p
+                                        class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mx-auto lg:mx-0">
+                                        Bimbingan kerja / materi
+                                    </p>
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <p id="show-content" class="text-base lg:text-lg font-bold mt-5 hover:cursor-pointer">
+                            Tampilkan Lengkap
+                        </p>
+
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Kirim lamaran kalian langsung ke kantor kami <br />
+                            PT. Heksa Artha Sakti (Cab. Kepanjen)
+                        </p>
+
+                        <p class="text-base lg:text-lg text-slate-500 w-full max-w-[31.25rem] mt-5 mx-auto lg:mx-0">
+                            Senin - Kamis, Pukul 08.00-12.00 <br />
+                            Jl. Salak Panggungrejo, Kepanjen, Kab. Malang
+                            (Sebelah Jalan Masuk Gang Salak)
+                        </p>
+
+                    </div>
+                </div>
+                <div class="hidden lg:block lg:w-6/12">
+                    <div class="w-full h-full pt-[5.625rem] flex justify-center items-end">
+                        <img src="./dist/img/woman-white.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-black pt-[5.625rem] ">
+        <div class="container px-4 mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full lg:w-6/12">
+                    <img src="./dist/img/logo-footer.png" alt="Flowbite Logo" />
+                    <p class="text-base lg:text-lg mt-5 text-white">
+                        PT. Heksa Artha Sakti (Cab. Kepanjen)
+                    </p>
+                    <p class="text-sm lg:text-base mt-2 text-slate-400">
+                        Jl. Salak Panggungrejo, <br /> Kepanjen, Kab. Malang
+                    </p>
+                </div>
+                <div class="w-full lg:w-2/12 mt-8 lg:mt-0" id="footer-menu">
+                    <p class="text-base lg:text-lg text-white">
+                        Menu
+                    </p>
+                    <a href="#profile"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-5">
+                        Profil
+                    </a>
+                    <a href="#product"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Produk
+                    </a>
+                    <a href="#testimoni"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Testimoni
+                    </a>
+                    <a href="#loker"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Lowongan
+                    </a>
+                </div>
+                <div class="w-full lg:w-2/12 mt-8 lg:mt-0">
+                    <p class="text-base lg:text-lg text-white">
+                        Beli Online
+                    </p>
+                    <a href="https://www.tokopedia.com/heksakepanjen" target="_blank"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-5">
+                        Tokopedia
+                    </a>
+                    <a href="https://shopee.co.id/shop/777865092/" target="_blank"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Shopee
+                    </a>
+                    <a href="http://wa.me/62980534503" target="_blank"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Whatsapp
+                    </a>
+                </div>
+                <div class="w-full lg:w-2/12 mt-8 lg:mt-0">
+                    <p class="text-base lg:text-lg text-white">
+                        Contact
+                    </p>
+                    <p class="block text-sm lg:text-base text-slate-400 mt-5">
+                        No telp: <br /> 082131990299 (HRD) Faysal
+                    </p>
+                    <a href="https://www.instagram.com/heksa.kepanjen/" target="_blank"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Instagram: <br /> @heksa.kepanjen
+                    </a>
+                    <a href="https://www.facebook.com/heksaarthasakti.kepanjen" target="_blank"
+                        class="block text-sm lg:text-base text-slate-400 hover:text-white focus:text-white w-fit hover:cursor-pointer mt-2">
+                        Facebook: <br /> heksaarthasakti.kepanjen
+                    </a>
+                </div>
+                <div class="w-full pb-10 mt-[4.375rem] text-slate-400 text-sm lg:text-base">
+                    &copy; 2022 <a href="https://algacreative.com/" class="hover:text-white" target="_blank"> Alga
+                        Creative </a> Developer
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flowbite@1.4.7/dist/flowbite.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        $(function () {
+            var nav = $("#nav")
+            var href = $('#mobile-menu a')
+            var container = $('#nav .container')
+            var btn_product = $('#btn-product')
+            var footer_menu = $('#footer-menu a')
+            var content_loker = $('#content-loker')
+            var show_content = $('#show-content')
+
+            function clickScrolled(e) {
+                e.preventDefault()
+                var target = this.hash
+                $target = $(target)
+                $('html, body').stop().animate({
+                    'scrollTop': $target.offset().top
+                }, 900, 'swing', function () {
+                    window.location.hash = target
+                })
+            }
+            $(href).on('click', clickScrolled)
+            $(btn_product).on('click', clickScrolled)
+            $(footer_menu).on('click', clickScrolled)
+
+            $(window).on('scroll', function () {
+                "use strict"
+                if ($(window).scrollTop() >= 50) {
+                    nav.addClass("bg-white")
+                    href.addClass('href-scrolled')
+                    container.addClass('py-6')
+                } else {
+                    nav.removeClass("bg-white")
+                    href.removeClass('href-scrolled')
+                    container.removeClass('py-6')
+                }
+            })
+
+            $(show_content).on('click', function () {
+                content_loker.slideToggle(function () {
+                    if (content_loker.is(":visible")) {
+                        show_content.html('Sembunyikan')
+                    } else {
+                        show_content.html('Tampilkan Lengkap')
+                    }
+                })
+            })
+
+            $('.custom-carousel').owlCarousel({
+                animateOut: 'fadeOut',
+                loop: true,
+                nav: true,
+                dots: false,
+                items: 1,
+                margin: 0,
+                smartSpeed: 450
+            })
+        })
+    </script>
+</body>
+
+</html>
